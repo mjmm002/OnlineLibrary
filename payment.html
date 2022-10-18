@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | AuthorityAsia</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Icon Style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="header" class='navbar autohide'>
+        <div class="header container-fluid">
+            <div class="nav-bar">     
+                <div class="nav-list">
+                    <div class="hamburger"><div class="bar"></div></div>
+                    <ul>
+                        <li><a href="index.html" data-after="Home">Home</a></li>
+                        <li><a href="index.html" data-after="Products">Product</a></li>
+                        <li><a href="checkout.html" data-after="Cart">Cart</a></li>
+                        <li><a href="index.html" data-after="About">About</a></li>
+                        <li><a href="index.html" data-after="Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="brand fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1.1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1;">
+                    <a href="home.html"><img src="media/Brand.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-checkout checkout">
+        <div class="upper">
+            <div class="label2">
+                <i class="fa-solid fa-bag-shopping"></i> Bag
+            </div>
+            <div class="label2">
+                <a href="checkout.html"><i class="fa-solid fa-truck"></i> Delivery</a>
+            </div>
+            <div class="label2">
+                <i class="fa-solid fa-credit-card"></i> Payment
+            </div>
+            <div class="label2">
+                <i class="fa-solid fa-book-open-reader"></i> Order Complete
+            </div>
+        </div>
+        <div class="row col-md">
+            <div class="column">
+                <h2>PAYMENT METHOD</h2>
+                <article>All Transactions are safe and secure.</article>
+                <div class="column">
+                    <br>
+                    <form>
+                        <hr>
+                        <div>
+                            <input type="radio" id="credit" name="pay_method" value="Credit">
+                            <label for="credit"><strong>CREDIT/DEBIT CARD</strong></label>
+                        </div>
+                        <div class="column">
+                            <small>Dear Customer, Please ensure your Credit Card is enabled for online transactions. Please contact your card issuing bank for further information</small>
+                            <div class="row3 name">
+                                <input type="text" id="card" placeholder="Card Number *" class="input-field" required>
+                                
+                                <div>
+                                    <img src="https://www.adidas.com.ph/static/checkout/react/696b82d/assets/img/icon-adidas-visa.svg" style="height: 20px; width:40px; margin-bottom:-25px">
+                                    <img src="https://www.adidas.com.ph/static/checkout/react/696b82d/assets/img/icon-adidas-master-card.svg" style="height: 20px; width:40px; margin-bottom: -25px;">
+                                </div>
+                            </div>
+                            <div class="row3 name">
+                                <input type="text" id="cardname" placeholder="Name on card *" class="input-field" required>
+                                
+                            </div>
+                            <div class="row3 name">
+                                <div class="row1">
+                                    <input type="text" id="cardmonth" placeholder="MM / YY *" class="input-field" required>
+                                    <input type="text" id="cardyear" placeholder="CVV *" class="input-field" required>
+                                </div>
+                                
+                                <div>
+                                    <img src="https://www.adidas.com.ph/static/checkout/react/696b82d/assets/img/icon-adidas-visa.svg" style="height: 20px; width:40px; text-align: center; margin-bottom:-25px">
+                                    <img src="https://www.adidas.com.ph/static/checkout/react/696b82d/assets/img/icon-adidas-master-card.svg" style="height: 20px; width:40px; margin-bottom: -25px;">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <br>
+                        <div class="row4">
+                            <div>
+                                <input type="radio" id="credit" name="pay_method" value="Credit">
+                                <label for="credit"><strong>PAYPAL</strong></label>
+                            </div>
+                            <img src="https://www.adidas.com.ph/static/checkout/react/696b82d/assets/img/icon-adidas-paypal.svg" style="height: 20px; width:90px; text-align: center; margin-bottom:-20px">
+                        </div>
+                        <br>
+                        <hr>
+                        <br>
+                        <div class="row4">
+                            <div>
+                                <input type="radio" id="credit" name="pay_method" value="Credit">
+                                <label for="credit"><strong>CASH ON DELIVERY</strong></label>
+                            </div>
+                            <img src="https://www.adidas.com.ph/static/checkout/react/696b82d/assets/img/icon-adidas-cash-on-delivery.svg" style="height: 40px; width:70px;">
+                        </div>
+                        <br>
+                        <br>
+                        <input type="checkbox" class="checkbox" id="yellow" name="color_opt1" value="Yellow">
+                        <label for="yellow">I acknowledge that I have read and understood the <span class="underline">Website Terms and Conditions</span>, <span class="underline">Delivery Policy</span> and AuthorityAsia <span class="underline">Privacy Policy</span> (as may be updated from time to time), and hereby agree to be bound by such terms.</label>
+                        <br>
+                        <br>
+                        <button type="submit" class="btn btn-primary btn-rev">
+                            <div class="row">
+                                <strong style="text-align: left;">PLACE ORDER</strong>
+                                <i class="fa-solid fa-arrow-right-long"style="text-align: right;"></i>
+                            </div>
+                        </button>
+                        <br>
+                    </form>
+                </div>
+            </div>
+            <div class="column billing">
+                 <h3>Order Summary</h3>
+                <div class="row">
+                    <small style="text-align: left;">2 ITEMS</small>
+                    <small style="text-align: right;">₱598.00</small>
+                </div>
+                <br>
+                <div class="row">
+                    <small style="text-align: left;">DELIVERY</small>
+                    <small style="text-align: right;">FREE</small>
+                </div>
+                <br>
+                <div class="row">
+                    <small style="text-align: left;"><strong>TOTAL</strong></small>
+                    <small style="text-align: right;"><strong>₱598.00</strong></small>
+                </div>
+                <input type="text" id="firstname" placeholder="Enter your promo code" class="input-field">
+                <h3>Order Details</h3>
+                <div class="row2">
+                    <img src="media/image1.jpg" style="height: 140px; width: 90px;">
+                    <div class="col">
+                        <small>BOOK</small>
+                        <small>Title: How to Kill a Mockingbird</small>
+                        <small>₱299.00</small>
+                    </div>
+                </div>
+                <div class="row2">
+                    <img src="media/image2.jpg" style="height: 140px; width: 90px;">
+                    <div class="col">
+                        <small>BOOK</small>
+                        <small>Title: The Great Gatsby</small>
+                        <small>₱299.00</small>
+                    </div>
+                </div>
+                <h4>DELIVERY ADDRESS</h4>
+                <small>Michael Joseph Manlapig</small>
+                <small>045 Hamilton Street, Thunder Bay</small>
+                <small>045 Hamilton</small>
+                <small>THUNDER BAY, ONTARIO, P7A 0A2, CA</small>
+                <small>09567901356</small>
+                <br>
+                <br>
+                <h4>BILLING DETAILS</h4>
+                <small>Michael Joseph Manlapig</small>
+                <small>045 Hamilton Street, Thunder Bay</small>
+                <small>045 Hamilton</small>
+                <small>THUNDER BAY, ONTARIO, P7A 0A2, CA</small>
+                <small>09567901356</small>
+                <small>michaeljoseph02manlapig@gmail.com</small>
+                <br>
+                <br>
+                <h4>DELIVERY OPTION</h4>
+                <small>Standard Delivery</small>
+                <small>2Go (Standard delivery)</small>
+                <small>FREE</small>
+                <h5>ACCEPTED PAYMENT METHODS</h5>
+                <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enPH/Images/paymentmethodsvmp_PH_new_tcm184-713924.png" style="width: 250px; height: 60px">
+                
+            </div>
+
+        </div>
+        
+    </div>
+    <section id="footer">
+        <div class="footer container-fluid">
+            <div class="brand"><a href="#hero"><img src="media/Brand.png"></div></a>
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="https://wwww.facebook.com/mjmm02" target="_blank"><i class="fab fa-facebook-f fb fa-beat" style="--fa-animation-duration: 0.43s; --fa-beat-scale:1.1;"></i></a>
+                </div>      
+                <div class="social-item">
+                    <a href="https://www.instagram.com/mjmanlapig02" target="_blank"><i class="fab fa-instagram ig fa-beat" style="--fa-animation-duration: 0.43s; --fa-beat-scale:1.1;"></i></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.twitter.com/mjmanlapig02" target="_blank"><i class="fab fa-twitter tw fa-beat" style="--fa-animation-duration: 0.43s; --fa-beat-scale:1.1;"></i></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.linkedin.com/in/michael-joseph-manlapig-7a1333246/" target="_blank"><i class="fab fa-linkedin-in in fa-beat" style="--fa-animation-duration: 0.43s; --fa-beat-scale:1.1;"></i></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://github.com/mjmm002" target="_blank"><i class="fab fa-github gh fa-beat" style="--fa-animation-duration: 0.43s; --fa-beat-scale:1.1;" "></i></a>
+                </div>
+            </div>
+            <div class="row4">
+                <p>Privacy Policy</p>
+                <p>Terms and Conditon</p>
+                <p>FAQ</p>
+                <p>Contact Us</p>
+            </div>
+            <p>Copyright © 2022 Michael. All rights reserved</p>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
+    <script type="text/javascript" src="https://f001.backblazeb2.com/file/buonzz-assets/jquery.ph-locations-v1.0.0.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        
+        function getfocus() {
+          document.getElementById("myAnchor").focus();
+        }
+    </script>
+</body>
+
+</html>

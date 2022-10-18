@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | AuthorityAsia</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Icon Style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="header" class='navbar autohide'>
+        <div class="header container-fluid">
+            <div class="nav-bar">     
+                <div class="nav-list">
+                    <div class="hamburger"><div class="bar"></div></div>
+                    <ul>
+                        <li><a href="index.html" data-after="Home">Home</a></li>
+                        <li><a href="index.html" data-after="Products">Product</a></li>
+                        <li><a href="checkout.html" data-after="Cart">Cart</a></li>
+                        <li><a href="index.html" data-after="About">About</a></li>
+                        <li><a href="index.html" data-after="Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="brand fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1.1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1;">
+                    <a href="home.html"><img src="media/Brand.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-checkout checkout">
+        <div class="upper">
+            <div class="label">
+                <i class="fa-solid fa-bag-shopping"></i> Bag
+            </div>
+            <div class="label">
+                <i class="fa-solid fa-truck"></i> Delivery
+            </div>
+            <div class="label">
+                <a href="payment.html"><i class="fa-solid fa-credit-card"></i> Payment</a>
+            </div>
+            <div class="label">
+                <i class="fa-solid fa-book-open-reader"></i> Order Complete
+            </div>
+        </div>
+        <div class="row col-md">
+            <div class="column payment">
+                <h1>Shipping Address</h1>
+                <div class="column payment">
+                    <form action="payment.html" method="">
+                        <div class="row1 col-sm name">
+                            <input type="text" id="firstname" placeholder="First Name *" class="input-field">
+                            <input type="text" id="lastname" placeholder="Last Name *" class="input-field">
+                        </div>
+                        <input type="text" id="address1" placeholder="Address 1 *" class="input-field">
+                        <input type="text" id="address2" placeholder="Address 2 *" class="input-field">
+                        <input type="text" id="baryo" placeholder="Barangay *" class="input-field">
+                        <div class="row1 name col-sm">
+                            <select name="region" id="region" class="input-field">
+                                <option value="" disabled selected>Region *</option>
+                            </select>
+
+                            <select name="provinces" id="province" class="input-field">
+                                <option value="" disabled selected>Province *</option>
+                            </select>
+                    
+                        </div>
+                        <div class="row1 name col-sm">
+                            <select name="city" id="city" class="input-field">
+                                <option value="" disabled selected>City *</option>
+                            </select>
+                            <select name="barangay" id="barangay" class="input-field">
+                                <option value="" disabled selected>Barangay *</option>
+                            </select>
+                        </div>
+                        <article><strong>Country: </strong>Philippines</article>
+                        <h2>GET YOUR ORDER?</h2>
+                        <div class="column delivery-option1">
+                            <div class="row1 ">
+                                <strong>Standard Delivery</strong>
+                                <span>FREE</span>
+                            </div>
+                            <div><i class="fa-solid fa-truck"></i> 2go(Standard Delivery)</div>
+                        </div>
+                        <div class="column delivery-option2">
+                            <div class="row1">
+                                <strong>Express Delivery</strong>
+                                <span>PREMIUM</span>
+                            </div>
+                            <div><i class="fa-solid fa-truck-fast"></i> FedEx(Express Delivery)</div>
+                        </div>
+                        <h2>Contact Information</h2>
+                        <article>We'll use these details to keep you informed on your delivery.</article>
+                        
+                        <div class="row1 col-sm">
+                            <input type="text" id="email1" placeholder="Email *" class="input-field">
+                        </div>
+                        <div class="row1 col-sm">
+                            <input type="text" id="phonenumber" placeholder="Phone Number *" class="input-field">
+                        </div>
+                        <input type="checkbox" class="checkbox" id="yellow" name="color_opt1" value="Yellow">
+                        <label for="yellow">My billing and delivery information are the same</label>
+                        <br>
+                        <input type="checkbox" class="checkbox" id="yellow" name="color_opt1" value="Yellow">
+                        <label for="yellow">I agree to receive news, promotions, information regarding AuthorityAsia brand, products, activities and events, and any other marketing communications and materials by e-mail, sms, in-app notification and/or telephone pursuant to the AuthorityAsia Privacy Policy. I agree to receive personalized email marketing messages from AuthorityAsia Philippines Inc. and runtastic GmbH.</label>
+                        <br>
+                        <button type="submit" class="btn btn-primary btn-rev">
+                            <div class="row">
+                                <strong style="text-align: left;">Review & PAY</strong>
+                                <i class="fa-solid fa-arrow-right-long"style="text-align: right;"></i>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="column login-col">
+                <h2>LOGIN</h2>
+                <form>
+
+                
+                <input type="text" id="email2" placeholder="Email *" class="input-field">
+                <input type="text" id="password" placeholder="Password *" class="input-field">
+                <small class="underline">Forgotten you password?</small>
+                <br>
+                <br>
+                <div>
+                    <input type="checkbox" class="checkbox" id="yellow" name="color_opt1" value="Yellow">
+                    <label for="yellow">Keep me logged in?<u>more info</u></label>
+                </div>
+                <button type="button" class="btn btn-primary">
+                    <div class="row">
+                        <strong style="text-align: left;">LOGGED IN</strong>
+                        <i class="fa-solid fa-arrow-right-long" style="text-align: right;"></i>
+                    </div>
+                </button>
+                <br>
+                <br>
+                <article>OR</article>
+                <br>
+                <button type="button" class="btn btn-secondary">
+                    <div class="row">
+                        <strong style="text-align: left;">FACEBOOK</strong>
+                        <i class="fa-brands fa-facebook fb"style="text-align: right;"></i>
+                    </div>
+                </button>
+                <br>
+                <br>
+                <button type="button" class="btn btn-secondary">
+                    <div class="row">
+                        <strong style="text-align: left;">GOOGLE</strong>
+                        <i class="fa-brands fa-google google" style="text-align: right;"></i>
+                    </div>
+                </button>
+                <h3>Order Summary</h3>
+                <div class="row">
+                    <small style="text-align: left;">2 ITEMS</small>
+                    <small style="text-align: right;">₱598.00</small>
+                </div>
+                <br>
+                <div class="row">
+                    <small style="text-align: left;">DELIVERY</small>
+                    <small style="text-align: right;">FREE</small>
+                </div>
+                <br>
+                <div class="row">
+                    <small style="text-align: left;"><strong>TOTAL</strong></small>
+                    <small style="text-align: right;"><strong>₱598.00</strong></small>
+                </div>
+                <input type="text" id="firstname" placeholder="Enter your promo code" class="input-field">
+                <h3>Order Details</h3>
+                <div class="row2">
+                    <img src="media/image1.jpg" style="height: 140px; width: 90px;">
+                    <div class="col">
+                        <small>BOOK</small>
+                        <small>Title: How to Kill a Mockingbird</small>
+                        <small>₱299.00</small>
+                    </div>
+                </div>
+                <hr>
+                <div class="row2">
+                    <img src="media/image2.jpg" style="height: 140px; width: 90px;">
+                    <div class="col">
+                        <small>BOOK</small>
+                        <small>Title: The Great Gatsby</small>
+                        <small>₱299.00</small>
+                    </div>
+                </div>
+                <hr>
+                <h5>ACCEPTED PAYMENT METHODS</h5>
+                <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enPH/Images/paymentmethodsvmp_PH_new_tcm184-713924.png" style="width: 250px; height: 60px">
+            </div>
+            </form>
+        </div>
+        
+    </div>
+    <section id="footer">
+        <div class="footer container-fluid">
+            <div class="brand"><a href="#hero"><img src="media/Brand.png"></div></a>
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="https://wwww.facebook.com/mjmm02" target="_blank"><i class="fab fa-facebook-f fb fa-beat" style="--fa-animation-duration: 0.43s; --fa-beat-scale:1.1;"></i></a>
+                </div>      
+                <div class="social-item">
+                    <a href="https://www.instagram.com/mjmanlapig02" target="_blank"><i class="fab fa-instagram ig fa-beat" style="--fa-animation-duration: 0.43s; --fa-beat-scale:1.1;"></i></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.twitter.com/mjmanlapig02" target="_blank"><i class="fab fa-twitter tw fa-beat" style="--fa-animation-duration: 0.43s; --fa-beat-scale:1.1;"></i></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.linkedin.com/in/michael-joseph-manlapig-7a1333246/" target="_blank"><i class="fab fa-linkedin-in in fa-beat" style="--fa-animation-duration: 0.43s; --fa-beat-scale:1.1;"></i></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://github.com/mjmm002" target="_blank"><i class="fab fa-github gh fa-beat" style="--fa-animation-duration: 0.43s; --fa-beat-scale:1.1;" "></i></a>
+                </div>
+            </div>
+            <div class="row4">
+                <p>Privacy Policy</p>
+                <p>Terms and Conditon</p>
+                <p>FAQ</p>
+                <p>Contact Us</p>
+            </div>
+            <p>Copyright © 2022 Michael. All rights reserved</p>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
+    <script type="text/javascript" src="https://f001.backblazeb2.com/file/buonzz-assets/jquery.ph-locations-v1.0.0.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        
+        function getfocus() {
+          document.getElementById("myAnchor").focus();
+        }
+    </script>
+</body>
+
+</html>
